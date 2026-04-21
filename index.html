@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BombayDC</title>
+    <meta name="description" content="Get in touch with BombayDC for sales enquiries, redevelopment, and more. We are here to help you with your real estate needs.">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Performance Preloading -->
+    <link rel="preload" href="fonts/Museo Slab Font/Museo_Slab_500.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="fonts/helvetica/Helvetica.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="assets/map@2x (1).png" as="image" fetchpriority="high">
+
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">LOGO</div>
+        <button class="hamburger" aria-label="Open menu">
+          <img src="./assets/Group 1358.svg" alt="Menu" width="26" height="20" decoding="async" />
+        </button>
+
+        <nav class="nav-menu">
+          <a href="#projects">PROJECTS</a>
+          <a href="#about">ABOUT</a>
+          <a href="#area">NRI AREA</a>
+          <a href="#thoughts">NEWS & THOUGHTS</a>
+          <a href="#directors">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+    
+    <div class="sperator"></div>
+
+    <!-- Mobile-only header note -->
+    <p class="mobile-header-note">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+    </p>
+    <p class="mobile-header-contact">
+      +91 000 0000 000 |<br />test1@gmail.com | test2@gmail.com
+    </p>
+
+    <p class="text">Lorem ipsum dolor sit amet - consetetur sadipscing elitr</p>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Left Section - Form -->
+        <section class="left-section">
+          <h1 class="page-title">Contact Us</h1>
+          <p class="page-subtitle">
+            When we aren't changing landscapes, we're making headlines.
+          </p>
+
+
+          <a href="#enquiry" class="enquiry-link">Send us an Enquiry</a>
+
+          <form class="contact-form" id="enquiry">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Name" />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Mobile Number"
+              />
+            </div>
+
+            <div class="form-group">
+              <div class="dropdown-container">
+                <div class="dropdown-header">
+                  <span id="selected">Query Type</span>
+                  <span class="arrow" id="arrow"></span>
+                </div>
+
+                <div class="dropdown-list" id="dropdownList">
+                  <div class="item" onclick="selectItem('Projects')">
+                    Projects
+                  </div>
+                  <div class="item" onclick="selectItem('Media')">Media</div>
+                  <div class="item" onclick="selectItem('Career')">Career</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="newsletter-btn">Send</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Right Section - Map and Info -->
+        <section class="right-section">
+          <div class="map-container">
+            <div class="map-placeholder">
+              <img src="assets/map@2x (1).png" alt="Map" class="map-image" fetchpriority="high" decoding="async" width="838" height="683" />
+
+              <div class="map-pin" style="left:64%; top:24%;" aria-hidden="true"></div>
+            </div>
+
+            <button class="enquriy-btn">Send us an Enquiry</button>
+          </div>
+
+          <div class="info-box">
+            <p class="info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam
+              nonummy
+            </p>
+            <p class="info-contact">
+              +91 000 0000 001 | test1@gmail.com | test2@gmail.com
+            </p>
+          </div>
+
+          <div class="contact-boxes">
+            <div class="contact-box">
+              <h3 class="contact-title">Sales Enquiry</h3>
+              <div class="contact-info">
+                <p>Phone</p>
+                <p class="contact-phone">+91 000 0000 001</p>
+              </div>
+              <div class="sperator"></div>
+              <div class="contact-info">
+                <p>Email</p>
+                <p class="contact-email">test1@gmail.com</p>
+              </div>
+              <div class="sperator"></div>
+            </div>
+
+            <div class="contact-box">
+              <h3 class="contact-title">Redevelopment Centre</h3>
+              <div class="contact-info">
+                <p>Phone</p>
+                <p class="contact-phone">+91 000 0000 002</p>
+              </div>
+              <div class="sperator"></div>
+
+              <div class="contact-info">
+                <p>Email</p>
+                <p class="contact-email">test2@gmail.com</p>
+              </div>
+              <div class="sperator"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">LOGO</div>
+        </div>
+
+        <div class="footer-middle">
+          <div class="footer-column">
+            <ul class="footer-links">
+              <div class="footer-right">
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">NRI Area</a></li>
+                <li><a href="#">News & Thoughts</a></li>
+              </div>
+              <div class="footer-right">
+                <li><a href="#">Employee Corner</a></li>
+                <li><a href="#">CSR</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Disclaimer</a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <h4 class="footer-heading">Get the latest news</h4>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter Email"
+              class="newsletter-input"
+            />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="sperator1"></div>
+
+      <div class="footer-bottom">
+        <div>
+          <p>An ISO 9001:2008 Certified Company</p>
+        </div>
+        <div>
+          <p>© copyright 2019</p>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Back to Top button -->
+    <a href="#" id="toTop" class="to-top" aria-label="Back to top">
+      <span class="to-top-icon"><i class="fa-solid fa-arrow-up"></i></span>
+      <span class="to-top-label">To the top</span>
+    </a>
+
+    <!-- Mobile full-screen menu (rendered for mobile via CSS) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav>
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#area">NRI AREA</a>
+        <a href="#thoughts">NEWS & THOUGHTS</a>
+        <a href="#directors">CONTACT</a>
+      </nav>
+    </div>
+
+    <!-- Full-screen Enquiry Modal -->
+    <div class="enquiry-modal" id="enquiryModal" aria-hidden="true">
+      <button class="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-content">
+        <form class="contact-form" id="enquiry-modal-form">
+          <div class="form-group">
+            <input type="text" id="modal-name" name="name" placeholder="Name" />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="modal-email"
+              name="email"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="tel"
+              id="modal-mobile"
+              name="mobile"
+              placeholder="Mobile Number"
+            />
+          </div>
+
+          <div class="form-group">
+            <div class="dropdown-container">
+              <div class="dropdown-header">
+                <span class="selected-text">Query Type</span>
+                <span class="arrow"></span>
+              </div>
+
+              <div class="dropdown-list">
+                <div class="item" onclick="selectItemModal('Projects', this)">
+                  Projects
+                </div>
+                <div class="item" onclick="selectItemModal('Media', this)">Media</div>
+                <div class="item" onclick="selectItemModal('Career', this)">Career</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="newsletter-btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
